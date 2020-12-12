@@ -6,7 +6,7 @@
 </head>
 
 <body>
-<h1><b>FILL IN THE BELOW FORM </b></h1>
+<h1><b>FILL IN THE BELOW FORM TO KNOW YOUR DAY OF BIRTH </b></h1>
 <section>
     <form> 
         <input type = "number" name="birthD" placeholder="Date" min="1" max="31" required> Enter Date of Birth 
@@ -16,9 +16,11 @@
         <input type="radio" name="gender" value="Male">Male 
         <input type="radio" name="gender" value="Female">Female 
         <br><br><br>
-        <input type="submit" name = "calculate" action= "test4.1.html">
+        <input class="space" type="submit" name = "calculate" action= "test4.1.html">
         <input type="reset" value="clear">
         <br><br><br>
+
+
         
         
             </form>
@@ -26,6 +28,16 @@
 
 
 </section>
+
+
+<script>
+
+    week = (12 + ((4+1)*26)/10 + 1995 + 1995/4 + 6 * (1995/100) + 1995/400 + 5) % 7 
+alert("Your date of birth is " + week)
+
+
+
+</script>
 
 </body>
 
