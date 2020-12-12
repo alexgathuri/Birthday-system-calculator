@@ -1,0 +1,25 @@
+body{
+    background:url(images/work.jpg)
+
+}
+
+
+h1{
+    text-align:center;
+    background-color: whitesmoke;
+    border: solid;
+    padding: 15px;
+    margin: 50px;
+}
+
+section{
+    border: solid;
+    background-color: whitesmoke;
+
+}
+form{
+text-align: center;
+margin: 10px;
+padding:10px;
+
+}
