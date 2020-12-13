@@ -17,6 +17,12 @@ Author's name: Alex Gathuri
 
 
 #BDD.
+Where to start in the process
+    By inputing your birthday details within the form
+
+What to test 
+    Whether you can determine your Akhan name
+
 
 
 #Technologies used.
