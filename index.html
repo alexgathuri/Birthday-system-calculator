@@ -72,72 +72,63 @@ var week =  (date + month+ year + year/4 + 6 * (year/100) + year/400 + 5) % 7
 
 
 
-if (gender1 === Male) {
-
-    if (week < 1) {
-    document.getElementById("calculate").innerHTML= "You were born on a Monday";
-    
-} else if (week < 2 && week >1){
-    document.getElementById("calculate").innerHTML= "You were born on a Tuesday";
-    
-}
-else if (week < 3 && week >2){
-    document.getElementById("calculate").innerHTML= "You were born on a Wednesday";
-    
-}
-else if (week < 4 && week >3){
-    document.getElementById("calculate").innerHTML= "You were born on a Thursday";
-    
-}
-else if (week < 5 && week > 4){
-    document.getElementById("calculate").innerHTML= "You were born on a Friday";
-    
-}
-else if (week < 6 && week > 5){
-    document.getElementById("calculate").innerHTML= "You were born on a Saturday";
-    
-}
-else if (week < 7 && week > 8){
-    document.getElementById("calculate").innerHTML= "You were born on a Sunday";
-    
-}
-} 
-
-else {
-
-    if (week < 1) {
-    document.getElementById("calculate").innerHTML= "You were born on a Monday";
-    
-} else if (week < 2 && week >1){
-    document.getElementById("calculate").innerHTML= "You were born on a Tuesday";
-    
-}
-else if (week < 3 && week >2){
-    document.getElementById("calculate").innerHTML= "You were born on a Wednesday";
-    
-}
-else if (week < 4 && week >3){
-    document.getElementById("calculate").innerHTML= "You were born on a Thursday";
-    
-}
-else if (week < 5 && week > 4){
-    document.getElementById("calculate").innerHTML= "You were born on a Friday";
-    
-}
-else if (week < 6 && week > 5){
-    document.getElementById("calculate").innerHTML= "You were born on a Saturday";
-    
-}
-else if (week < 7 && week > 8){
-    document.getElementById("calculate").innerHTML= "You were born on a Sunday";
-    
-}
-}
-    
 
 
 
-
+if (week < 1 && gender1 == "Male") {
+    document.getElementById("calculate").innerHTML= "You were born on a Monday. Your Akhan name is Kwadwo";
+    
+} else if (week <1 && gender1 === "Female"){
+    document.getElementById("calculate").innerHTML= "You were born on a Monday. Your Akhan name is Adwoa";
+    
+}else if (week < 2 && week >1 && gender1 === "Male"){
+    document.getElementById("calculate").innerHTML= "You were born on a Tuesday. Your Akhan name is Kwabena";
+    
+}else if (week < 2 && week >1 && gender1 === "Female"){
+    document.getElementById("calculate").innerHTML= "You were born on a Tuesday. Your Akhan name is Abenaa";
+    
+}
+else if (week < 3 && week >2 && gender1 === "Male"){
+    document.getElementById("calculate").innerHTML= "You were born on a Wednesday. Your Akhan name is Kwaku";
+    
+}
+else if (week < 3 && week >2 && gender1 === "Female"){
+    document.getElementById("calculate").innerHTML= "You were born on a Wednesday. Your Akhan name is Akua";
+    
+}
+else if (week < 4 && week >3 && gender1 === "Male"){
+    document.getElementById("calculate").innerHTML= "You were born on a Thursday. Your Akhan name is Yaw.";
+    
+}
+else if (week < 4 && week >3 && gender1=== "Female"){
+    document.getElementById("calculate").innerHTML= "You were born on a Thursday. Your Akhan name is Yaa";
+    
+}
+else if (week < 5 && week > 4 && gender1==="Male"){
+    document.getElementById("calculate").innerHTML= "You were born on a Friday. Your Akhan name is Kofi.";
+    
+}
+else if (week < 5 && week > 4 && gender1==="Female"){
+    document.getElementById("calculate").innerHTML= "You were born on a Friday. Your Akhan name is Afua.";
+    
+}
+else if (week < 6 && week > 5 && gender1==="Male"){
+    document.getElementById("calculate").innerHTML= "You were born on a Saturday. Your Akhan name is Kwame.";
+    
+}
+else if (week < 6 && week > 5 && gender1==="Female"){
+    document.getElementById("calculate").innerHTML= "You were born on a Saturday. Your Akhan name is Ama.";
+    
+}
+else if (week < 7 && week > 8 && gender1==="Male"){
+    document.getElementById("calculate").innerHTML= "You were born on a Sunday. Your Akhan name is Kwasi.";
+    
+}
+else if (week < 7 && week > 8 && gender1=== "Female"){
+    document.getElementById("calculate").innerHTML= "You were born on a Sunday. Your Akhan name is Akosua.";
+    
+}
+}
     </script>
     
 
