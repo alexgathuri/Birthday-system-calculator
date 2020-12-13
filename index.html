@@ -6,20 +6,24 @@
 </head>
 
 <body>
-<h1><b>FILL IN THE BELOW FORM TO KNOW YOUR DAY OF BIRTH </b></h1>
+<h1><b>FILL IN THE BELOW FORM TO KNOW THE DAY OF THE WEEK YOU WERE BORN </b></h1>
 <section>
     <form id="calculate"> 
+        <h2><b>PLEASE SHARE YOUR DETAILS BELOW</b></h2>
+
         <input id="birthd" type = "number" name="birthD" placeholder="Date" min="1" max="31" required> Enter Date of Birth 
         <br><br>
 
         <input id="birthm" type = "number" name="birthm" placeholder="Month" min="1" max="12" required> Enter Month of birth 
         <br><br>
 
-        <input id="birthy" type = "number" name="birthy" placeholder="Date" min="1" max="2020" required> Enter Date of Birth 
+        <input id="birthy" type = "number" name="birthy" placeholder="Year" min="1" max="2020" required> Enter Year of Birth 
         <br><br>
 
-        <input type="radio" name="gender" value="Male">Male 
-        <input type="radio" name="gender" value="Female">Female 
+        <select id="gender">
+        <option value="Male">Male </option>
+        <option value="Female">Female </option>
+        </select>
         <br><br><br>
 
         <input type="submit" onclick="change()">
@@ -41,59 +45,99 @@
 
 
     function change(){
-        var date = document.getElementById("birthd").value;
-        var month =document.getElementById("birthm").value;
-        var year= document.getElementById("birthy").value;
-
-        var date = parseInt (date);
-        var month = parseInt (month);
-        var year = parseInt (year);
-
-        var week =  (date + ((month+1)*26)/10 + year + year/4 + 6 * (year/100) + year/400 + 5) % 7 
         
-        if (week < 1) {
-            document.getElementById("calculate").innerHTML= "You were born on a Monday";
-            
-        } else if (week < 2 && week >1){
-            document.getElementById("calculate").innerHTML= "You were born on a Tuesday";
-            
-        }
-        else if (week < 3 && week >2){
-            document.getElementById("calculate").innerHTML= "You were born on a Wednesday";
-            
-        }
-        else if (week < 4 && week >3){
-            document.getElementById("calculate").innerHTML= "You were born on a Thursday";
-            
-        }
-        else if (week < 5 && week > 4){
-            document.getElementById("calculate").innerHTML= "You were born on a Friday";
-            
-        }
-        else if (week < 6 && week > 5){
-            document.getElementById("calculate").innerHTML= "You were born on a Saturday";
-            
-        }
-        else if (week < 7 && week > 8){
-            document.getElementById("calculate").innerHTML= "You were born on a Sunday";
-            
-        }
+        
+var date = document.getElementById("birthd").value;
+var month =document.getElementById("birthm").value;
+var year= document.getElementById("birthy").value;
+var gender1 = document.getElementById("gender").value;
+//document.getElementById("calculate").innerHTML = gender1;
 
 
-       
+var date = parseInt (date);
+var month = parseInt (month);
+var year = parseInt (year);
+var week = parseInt (week);
+
+var month = ((month+1)*26)/10
+var month = Math.trunc(month);
+
+var week =  (date + month+ year + year/4 + 6 * (year/100) + year/400 + 5) % 7 
 
 
-        //document.getElementById("calculate").innerHTML= week;
+
+
+
+
+
+
+
+if (gender1 === Male) {
+
+    if (week < 1) {
+    document.getElementById("calculate").innerHTML= "You were born on a Monday";
     
+} else if (week < 2 && week >1){
+    document.getElementById("calculate").innerHTML= "You were born on a Tuesday";
     
+}
+else if (week < 3 && week >2){
+    document.getElementById("calculate").innerHTML= "You were born on a Wednesday";
     
+}
+else if (week < 4 && week >3){
+    document.getElementById("calculate").innerHTML= "You were born on a Thursday";
     
+}
+else if (week < 5 && week > 4){
+    document.getElementById("calculate").innerHTML= "You were born on a Friday";
     
+}
+else if (week < 6 && week > 5){
+    document.getElementById("calculate").innerHTML= "You were born on a Saturday";
     
+}
+else if (week < 7 && week > 8){
+    document.getElementById("calculate").innerHTML= "You were born on a Sunday";
     
+}
+} 
+
+else {
+
+    if (week < 1) {
+    document.getElementById("calculate").innerHTML= "You were born on a Monday";
     
-    }
+} else if (week < 2 && week >1){
+    document.getElementById("calculate").innerHTML= "You were born on a Tuesday";
     
+}
+else if (week < 3 && week >2){
+    document.getElementById("calculate").innerHTML= "You were born on a Wednesday";
+    
+}
+else if (week < 4 && week >3){
+    document.getElementById("calculate").innerHTML= "You were born on a Thursday";
+    
+}
+else if (week < 5 && week > 4){
+    document.getElementById("calculate").innerHTML= "You were born on a Friday";
+    
+}
+else if (week < 6 && week > 5){
+    document.getElementById("calculate").innerHTML= "You were born on a Saturday";
+    
+}
+else if (week < 7 && week > 8){
+    document.getElementById("calculate").innerHTML= "You were born on a Sunday";
+    
+}
+}
+    
+
+
+
+
     </script>
     
 
