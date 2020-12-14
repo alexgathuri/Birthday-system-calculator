@@ -1,22 +1,22 @@
 
-#Project name.
+# Project name.
     alexgathuri/week2
 
 
-#Project description.
+# Project description.
     The system designed is used to calculate the day of the week a person was born.
 
 
-#Author(s) information.
+# Author(s) information.
 Author's name: Alex Gathuri
 
-#Setup instructions - includes any scripts that need to be run if necessary.
+# Setup instructions - includes any scripts that need to be run if necessary.
     Open the terminal.
     Use command gitclone then paste the link https://github.com/alexgathuri/week2.git
     Use command cd documents to open the repository. Then code.
 
 
-#BDD.
+# BDD.
 Where to start in the process
     By inputing your birthday details within the form
 
@@ -25,16 +25,16 @@ What to test
 
 
 
-#Technologies used.
+# Technologies used.
 HTML, Javascript and CSS
 
 
-#Contact information.
+# Contact information.
     Phone number: 0715488707
     Email: gathurialex4@gmail.com
 
 
-#License and Copyright information.
+# License and Copyright information.
     MIT License
 
 Copyright (c) 2020 alexgathuri
